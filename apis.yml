@@ -1,8 +1,25 @@
 aid: inherent
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inherent.png
 name: Inherent
-description: 'Inherent is a company surfaced as a portfolio company of index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Inherent (Inherent Laboratories Ltd) is an early-stage AI research lab
+  building recursively self-improving AI systems for scientific discovery — "AI scientists"
+  intended to augment human researchers rather than replace them. Incorporated as a
+  Public Benefit Corporation and backed by Index Ventures, the company frames itself
+  as a reimagined research institution pursuing general-purpose inventive AI, autonomous-lab
+  capabilities, and human-machine teaming across scientific domains. As of this profile
+  it publishes a manifesto and careers page but no public API, SDK, developer documentation,
+  or product surface — this repo tracks it as a lead for enrichment as those surfaces emerge.'
 url: https://raw.githubusercontent.com/api-evangelist/inherent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai Ml
+- Artificial Intelligence
+- Machine Learning
+- AI Research
+- Scientific Discovery
+- Public Benefit Corporation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inherent-domain-security.yml
 - type: Website
-  url: http://www.inherentlaboratories.com
+  url: https://inherentlabs.ai
+- type: PrivacyPolicy
+  url: https://inherentlabs.ai/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
